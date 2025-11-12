@@ -71,8 +71,8 @@ fun FeedItem(feed: Feed) {
                 feed.userNickName,
                 modifier = Modifier
                     .align(Alignment.TopStart) // Alinha no canto superior esquerdo
-                    .padding(8.dp) // Adiciona um padding para afastar das bordas
-                    .background(color = Purple40.copy(alpha = 0.5f), shape = RectangleShape), // Fundo semitransparente para legibilidade
+                    .padding(8.dp), // Adiciona um padding para afastar das bordas
+//                    .background(color = Purple40.copy(alpha = 0.5f), shape = RectangleShape), // Fundo semitransparente para legibilidade
                 style = MaterialTheme.typography.labelMedium,
                 color = MaterialTheme.colorScheme.onPrimary, // Cor clara para contraste
                 maxLines = 1,
@@ -84,8 +84,8 @@ fun FeedItem(feed: Feed) {
                 feed.localName,
                 modifier = Modifier
                     .align(Alignment.TopEnd) // Alinha no canto superior direito
-                    .padding(8.dp) // Adiciona um padding
-                    .background(color = Purple40.copy(alpha = 0.5f), shape = RectangleShape),
+                    .padding(8.dp), // Adiciona um padding
+//                    .background(color = Purple40.copy(alpha = 0.5f), shape = RectangleShape),
 
                 style = MaterialTheme.typography.labelMedium,
                 color = MaterialTheme.colorScheme.onPrimary,
@@ -101,6 +101,7 @@ fun FeedItem(feed: Feed) {
                 .fillMaxWidth()
                 .padding(top = 8.dp),
             style = MaterialTheme.typography.bodyMedium, // Alterei para bodyMedium, que é mais apropriado para legendas
+            color = MaterialTheme.colorScheme.onPrimary,
             maxLines = 2,
             overflow = TextOverflow.Ellipsis,
             textAlign = TextAlign.Left
